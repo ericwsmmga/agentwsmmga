@@ -1,10 +1,10 @@
 {
-  "name": "agentiwsmmga",
+  "name": "agentwsmmga",
   "version": "1.0.0",
   "description": "CLI para gerar time de agentes IA especializados.",
   "main": "dist/index.js",
   "bin": {
-    "agentiwsmmga": "./dist/index.js"
+    "agentwsmmga": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",

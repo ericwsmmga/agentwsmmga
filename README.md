@@ -1,4 +1,4 @@
-# agentiwsmmga
+# agentwsmmga
 
 Uma CLI interativa instalável globalmente que gera e configura automaticamente um time especializado de Agentes de IA (Personas) no seu projeto. 
 
@@ -15,14 +15,14 @@ Para instalar a partir do GitHub, você deve usar o comando de instalação glob
 npm install -g git+https://github.com/ericwsmmga/agentwsmmga.git
 \`\`\`
 
-> **Dica:** Ao fazer isso, o NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentiwsmmga` em qualquer projeto seu. Se você clonou este repositório localmente só para testar, você pode rodar `npm install -g .` e **depois excluir a pasta**, pois os arquivos já estarão no cache global do sistema.
+> **Dica:** Ao fazer isso, o NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentwsmmga` em qualquer projeto seu. Se você clonou este repositório localmente só para testar, você pode rodar `npm install -g .` e **depois excluir a pasta**, pois os arquivos já estarão no cache global do sistema.
 
 ## 🛠 Como Utilizar
 
 Após instalar globalmente, vá para a pasta raiz de qualquer projeto seu e execute o comando:
 
 \`\`\`bash
-agentiwsmmga
+agentwsmmga
 \`\`\`
 
 A CLI fará 4 perguntas:

@@ -17,7 +17,7 @@ async function main() {
   const pkg = require('../package.json');
 
   if (args.includes('--help') || args.includes('-h')) {
-    console.log('\nUso: agentiwsmmga [opções]\n');
+    console.log('\nUso: agentwsmmga [opções]\n');
     console.log('Opções:');
     console.log('  -h, --help      Mostra esta mensagem de ajuda');
     console.log('  -v, --version   Mostra a versão atual e verifica atualizações no GitHub\n');
@@ -52,7 +52,7 @@ async function main() {
     process.exit(0);
   }
 
-  console.log('Bem-vindo ao gerador de Agentes agentiwsmmga!\n');
+  console.log('Bem-vindo ao gerador de Agentes agentwsmmga!\n');
 
   let env = '';
   while (!['1', '2', '3'].includes(env)) {
