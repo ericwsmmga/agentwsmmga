@@ -1,0 +1,24 @@
+{
+  "name": "agentiwsmmga",
+  "version": "1.0.0",
+  "description": "CLI para gerar time de agentes IA especializados.",
+  "main": "dist/index.js",
+  "bin": {
+    "agentiwsmmga": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
