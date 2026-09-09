@@ -1,0 +1,40 @@
+name: Auto Changelog
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # É necessário fazer o checkout da branch do PR, e não da main
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Create CHANGELOG.md Se Não Existir
+        run: touch CHANGELOG.md
+
+      - name: Generate Changelog
+        # Usa o conventional-changelog para ler os commits e gerar o CHANGELOG.md baseado neles
+        run: npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0
+          
+      - name: Auto-commit Changelog
+        # Faz o commit e envia a mudança do changelog de volta para a branch do seu PR
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs(changelog): atualização automática do changelog"
+          file_pattern: CHANGELOG.md
