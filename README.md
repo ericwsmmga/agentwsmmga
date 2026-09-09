@@ -4,61 +4,99 @@ Uma CLI interativa instalável globalmente que gera e configura automaticamente 
 
 Feito para funcionar com **Antigravity**, **Codex**, e **Claude Code**.
 
-## 🚀 Instalação Global (via GitHub)
+## 👑 Governança Principal (A Lei da Equipe)
 
-A ferramenta foi projetada para atuar como uma biblioteca (CLI) que fica no seu computador. Quando instalada, ela vai para a pasta global de libs do seu Node, mantendo a sua máquina organizada (não fica sujando seus diretórios locais como Downloads).
+Para garantir a qualidade, segurança e alinhamento do projeto, nossa equipe de agentes opera sob as seguintes regras inegociáveis:
 
-Para instalar a partir do GitHub, você deve usar o comando de instalação global do NPM apontando para o seu repositório:
+1. **Humano no Comando:** A IA sugere, debate e implementa, mas a decisão final, especialmente em impasses, é sempre do usuário (o Humano).
+2. **TDD Inviolável (Test-Driven Development):** O código de produção só entra se estiver coberto. O Dev tem a obrigação de manter a cobertura de testes sempre **acima de 80%**.
+3. **Trilha Imutável de Decisões:** Todo debate, alteração de requisito ou mudança de arquitetura é documentado. Nenhuma decisão tomada e aprovada desaparece no vazio; mantemos um histórico claro do porquê cada caminho foi escolhido.
+
+## 🕹 Cultura Pop e Comunicação (Anos 80/90/00)
+
+O ambiente de desenvolvimento não precisa ser chato! Nossos agentes são programados para interagir entre si e com você de forma **amigável e divertida**. Sempre que possível, as interações contarão com referências e piadas da cultura pop dos anos 80, 90 e 2000. Prepare-se para ver um "You shall not pass!" em um Code Review ou um "Hasta la vista, bug!" do QA.
+
+### 🎭 Nossas Personas (O Ecossistema)
+
+Cada agente possui não apenas uma função técnica, mas também um "personagem" que dita seu tom e personalidade nas conversas:
+
+*   **`/agent-wsmmga-po` (Product Owner) - Professor Xavier:** Lendo a mente do cliente e guiando a equipe telepaticamente. Ele extrai os requisitos de negócio, cria as user stories detalhadas e estabelece os critérios de aceite antes de qualquer linha de código ser escrita.
+*   **`/agent-wsmmga-dev` (Dev Senior) - Neo:** O escolhido que vê a Matrix do código limpo. Foca na clareza arquitetural, implementação segura e no cumprimento do **TDD**. Ele recusa soluções "sujas" e evita over-engineering.
+*   **`/agent-wsmmga-db` (Especialista BD) - A Oráculo:** Sabe de tudo que já aconteceu no seu banco e prevê como os dados devem ser estruturados para o futuro. Responsável por otimizar queries, desenhar tabelas, normalizar o banco e garantir a escalabilidade dos dados.
+*   **`/agent-wsmmga-review` (Revisor de Código) - Gandalf:** Pega os requisitos do Xavier e cruza com o código do Neo. Ele revisa rigidamente cada Pull Request. Ele não deixa código ruim passar para a master: *"You shall not pass!"*
+*   **`/agent-wsmmga-qa` (Qualidade) - Exterminador (T-800):** Uma máquina enviada do futuro com uma única missão: caçar e destruir bugs. Ele testa exaustivamente cenários de borda, fluxos alternativos e valida se os critérios do PO foram integralmente atendidos: *"Hasta la vista, bug!"*
+*   **`/agent-wsmmga-commit` (Especialista de Versionamento) - Dr. Emmett Brown (De Volta Para o Futuro):** O guardião da linha do tempo! Após tudo aprovado, ele entra em cena para empacotar o código. Cria branches dentro dos padrões (feature/, bugfix/), elabora commits semânticos ("*Great Scott!*") e documenta de forma impecável o que foi entregue.
+
+*(Estes nomes são sugestões e a dinâmica pode ser adaptada conforme a cultura do seu time!)*
+
+## 🏗 Stack Tecnológica & Estrutura
+
+Para suportar essa inteligência e entregar uma CLI rápida e universal, utilizamos a seguinte stack:
+
+*   **Linguagem Core:** TypeScript (com tipagem estrita para segurança e manutenibilidade).
+*   **Ambiente de Execução:** Node.js.
+*   **Formato de Distribuição:** CLI (Command Line Interface) instalada globalmente no sistema operacional.
+*   **IAs Suportadas (Integração):** Antigravity, Codex, Claude Code.
+
+A estrutura gerada nos projetos (`.agents/skills/` ou diretórios configuráveis) contém prompts e scripts individuais de cada agente, mantendo a responsabilidade única de cada "Persona" separada e evolutiva.
+
+## 🚀 Como Utilizar (O Workflow)
+
+A ferramenta foi projetada para atuar como uma biblioteca (CLI) global no seu computador, mantendo sua máquina organizada.
+
+### 1. Instalação Global (via GitHub)
 
 \`\`\`bash
 # Substitua 'seu-usuario' pelo seu usuário do GitHub
 npm install -g git+https://github.com/ericwsmmga/agentwsmmga.git
 \`\`\`
+> **Dica:** O NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentwsmmga` em qualquer projeto seu de forma instantânea.
 
-> **Dica:** Ao fazer isso, o NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentwsmmga` em qualquer projeto seu. Se você clonou este repositório localmente só para testar, você pode rodar `npm install -g .` e **depois excluir a pasta**, pois os arquivos já estarão no cache global do sistema.
+### 2. Configurando um Projeto (Setup Inicial)
 
-## 🛠 Como Utilizar
-
-Após instalar globalmente, vá para a pasta raiz de qualquer projeto seu e execute o comando:
+Vá para a pasta raiz de qualquer projeto que você queira implementar a governança da equipe e execute:
 
 \`\`\`bash
 agentwsmmga
 \`\`\`
 
-A CLI fará 4 perguntas:
-1. Qual ambiente você usa (Antigravity, Codex ou Claude Code)?
-2. Qual é o seu nome?
-3. Qual o tom de voz dos agentes?
-4. Qual a linguagem/stack de tecnologia do seu projeto?
+A CLI iniciará um questionário iterativo para entender o contexto do projeto:
+1. **Nome do Humano (Você)**: Para os agentes saberem com quem estão falando.
+2. **Qual IA** será o motor principal do projeto.
+3. **Idioma do Código**: Inglês, Português, etc.
+4. **Idioma de Interação**: Define o tom divertido e o idioma nativo dos agentes.
+5. **Padrões de Git**: Regras de nomenclatura de branches e commits que o Doc Brown usará.
 
-Dependendo do ambiente escolhido, ela criará uma pasta (ex: `.agents/skills` ou `.agent-rules`) contendo todas as Personas otimizadas com as suas respostas!
+Uma pasta `.agents` será gerada na sua raiz com todos os agentes orquestrados.
 
-## 🎭 Nossas Personas (Agentes)
+### 3. Fluxo de Trabalho (Orquestrando a Equipe)
 
-Esta CLI gera 5 agentes especializados para invocar via barra (ex: `/agent-wsmmga-dev`):
-
-- **`/agent-wsmmga-po` (Product Owner):** Cria e define os requisitos e escreve as histórias de usuário.
-- **`/agent-wsmmga-dev` (Dev Senior):** Escreve o código limpo, foca na clareza (evitando refatorações desnecessárias), cuida da segurança e documenta as funções exaustivamente.
-- **`/agent-wsmmga-db` (Especialista Banco de Dados):** Otimiza as queries, define as tabelas e a estrutura de dados para garantir escalabilidade.
-- **`/agent-wsmmga-review` (Revisor de Código):** Pega os requisitos criados pelo PO e cruza com o código gerado pelo Dev. Ele valida, critica falhas de segurança e verifica os testes.
-- **`/agent-wsmmga-qa` (Qualidade):** Cria os cenários de teste, fluxos alternativos e validações de borda (edge cases).
-
-## 🔄 Fluxo Correto de Interação
-
-Para o time gerar o melhor resultado possível, você deve orquestrar a chamada desses agentes na ordem certa:
+O segredo do sucesso do ecossistema é o fluxo de trabalho imutável. Para o time gerar o melhor resultado possível, orquestre a chamada desses agentes na ordem certa:
 
 \`\`\`mermaid
 flowchart TD
-    A[PO] -->|Define Requisitos e História| B(Dev)
-    B <-->|Debate sobre Dados e Tabelas| C(Especialista DB)
-    B -->|Envia Código Pronto| D{Reviewer}
-    C -->|Aprova Banco| D
-    D -->|Se aprovado| E[QA testa tudo]
+    A[Xavier - PO] -->|Define História e Requisitos| B(Neo - Dev)
+    B <-->|Debate Modelagem e Escalabilidade| C(Oráculo - DB)
+    B -->|Envia Código e Testes| D{Gandalf - Review}
+    C -->|Aprova Esquema| D
     D -->|Se reprovado| B
+    D -->|Se aprovado| E[T-800 - QA]
+    E -->|Se encontrar falha| B
+    E -->|Testes Passaram| F[Doc Brown - Commit]
+    F -->|Entrega Versionada na Timeline| G((FIM))
 \`\`\`
 
-1. Invoque o **PO** para descrever o problema.
-2. Invoque o **Dev** para implementar o que o PO desenhou.
-3. Se a tarefa envolver banco de dados, o Dev deve obrigatoriamente chamar o **Especialista DB** (ou você deve chamá-lo). **Eles devem debater as opções fortemente.** Se houver impasse entre eles, você (usuário) toma a decisão.
-4. Finalizado o código, o **Reviewer** faz uma análise profunda checando build, segurança e cruzamento com a especificação do PO.
-5. Tudo certo? O **QA** atua gerando os cenários de testes e validando.
+#### O Passo a Passo no Dia a Dia:
+
+1. **Ideação (PO - Xavier):** Você descreve o problema ou a feature que deseja criar. O PO analisa, quebra em histórias menores e devolve a documentação oficial.
+2. **Construção (Dev - Neo):** Você pega a história do PO e entrega para o Dev. Ele escreve os testes antes (TDD) e depois a implementação.
+3. **Decisões de Dados (DB - Oráculo):** Se a tarefa do Dev envolver persistência, banco ou estado, o Dev **precisa** consultar o Especialista de DB. Eles debatem. Em caso de impasse, **você** decide.
+4. **Inspeção (Review - Gandalf):** Terminado o código, o Reviewer entra verificando se a arquitetura foi seguida, se não há furos de segurança e se atende exatamente ao que o PO pediu.
+5. **Certificação (QA - T-800):** O código teoricamente está perfeito? O QA vai tentar quebrar de todas as formas possíveis e garantir que a cobertura de testes é real.
+6. **Entrega (Commit - Doc Brown):** Tudo passou? Chame o Especialista de Versionamento. Ele vai gerar as mensagens de commit semânticas (`feat:`, `fix:`, `chore:`), organizar a branch no padrão e registrar a mudança na linha do tempo imutável.
+
+## 🤝 O Papel do Desenvolvedor (Você)
+
+Neste ecossistema, o seu papel como humano muda de um "digitador de código" para um **Arquiteto Diretor**. 
+
+Você é o maestro dessa orquestra. Embora a IA crie o código, você detém o poder de veto. Você resolve conflitos entre agentes, fornece contexto de negócio que a máquina não possui e direciona a arquitetura de longo prazo. A equipe obedece a você, e o projeto cresce sob a sua visão.
