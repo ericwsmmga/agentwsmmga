@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.0...v1.1.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* change devDependencies to dependencies to fix git install ([480d6d4](https://github.com/ericwsmmga/agentwsmmga/commit/480d6d49527eddf074f2b81e706da8a95a634286))
+
 ## [1.1.0](https://github.com/ericwsmmga/agentwsmmga/compare/v1.0.0...v1.1.0) (2026-09-09)
 
 
