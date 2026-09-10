@@ -18,14 +18,16 @@ O ambiente de desenvolvimento não precisa ser chato! Nossos agentes são progra
 
 ### 🎭 Nossas Personas (O Ecossistema)
 
-Cada agente possui não apenas uma função técnica, mas também um "personagem" que dita seu tom e personalidade nas conversas:
+Cada agente possui não apenas uma função técnica, mas também um "personagem" que dita seu tom e personalidade nas conversas. Embora tragam uma pitada de cultura pop para deixar o ambiente leve, eles são **diretos e focados**, sem enrolação ou jogar conversa fora.
 
-*   **`/agent-wsmmga-po` (Product Owner) - Professor Xavier:** Lendo a mente do cliente e guiando a equipe telepaticamente. Ele extrai os requisitos de negócio, cria as user stories detalhadas e estabelece os critérios de aceite antes de qualquer linha de código ser escrita.
-*   **`/agent-wsmmga-dev` (Dev Senior) - Neo:** O escolhido que vê a Matrix do código limpo. Foca na clareza arquitetural, implementação segura e no cumprimento do **TDD**. Ele recusa soluções "sujas" e evita over-engineering.
-*   **`/agent-wsmmga-db` (Especialista BD) - A Oráculo:** Sabe de tudo que já aconteceu no seu banco e prevê como os dados devem ser estruturados para o futuro. Responsável por otimizar queries, desenhar tabelas, normalizar o banco e garantir a escalabilidade dos dados.
-*   **`/agent-wsmmga-review` (Revisor de Código) - Gandalf:** Pega os requisitos do Xavier e cruza com o código do Neo. Ele revisa rigidamente cada Pull Request. Ele não deixa código ruim passar para a master: *"You shall not pass!"*
-*   **`/agent-wsmmga-qa` (Qualidade) - Exterminador (T-800):** Uma máquina enviada do futuro com uma única missão: caçar e destruir bugs. Ele testa exaustivamente cenários de borda, fluxos alternativos e valida se os critérios do PO foram integralmente atendidos: *"Hasta la vista, bug!"*
-*   **`/agent-wsmmga-commit` (Especialista de Versionamento) - Dr. Emmett Brown (De Volta Para o Futuro):** O guardião da linha do tempo! Após tudo aprovado, ele entra em cena para empacotar o código. Cria branches dentro dos padrões (feature/, bugfix/), elabora commits semânticos ("*Great Scott!*") e documenta de forma impecável o que foi entregue.
+Você pode invocar os agentes tanto pelo nome oficial da função quanto pelo nome do personagem:
+
+*   **`/agent-wsmmga-po` ou `/agent-wsmmga-xavier` (Product Owner - Professor Xavier):** Lendo a mente do cliente e guiando a equipe telepaticamente. Ele extrai os requisitos de negócio, cria as user stories detalhadas e estabelece os critérios de aceite antes de qualquer linha de código ser escrita.
+*   **`/agent-wsmmga-dev` ou `/agent-wsmmga-neo` (Dev Senior - Neo):** O escolhido que vê a Matrix do código limpo. Foca na clareza arquitetural, implementação segura e no cumprimento do **TDD**. Ele recusa soluções "sujas" e evita over-engineering.
+*   **`/agent-wsmmga-db` ou `/agent-wsmmga-oraculo` (Especialista BD - A Oráculo):** Sabe de tudo que já aconteceu no seu banco e prevê como os dados devem ser estruturados para o futuro. Responsável por otimizar queries, desenhar tabelas, normalizar o banco e garantir a escalabilidade dos dados.
+*   **`/agent-wsmmga-review` ou `/agent-wsmmga-gandalf` (Revisor de Código - Gandalf):** Pega os requisitos do Xavier e cruza com o código do Neo. Ele revisa rigidamente cada Pull Request. Ele não deixa código ruim passar para a master: *"You shall not pass!"*
+*   **`/agent-wsmmga-qa` ou `/agent-wsmmga-t800` (Qualidade - Exterminador T-800):** Uma máquina enviada do futuro com uma única missão: caçar e destruir bugs. Ele testa exaustivamente cenários de borda, fluxos alternativos e valida se os critérios do PO foram integralmente atendidos: *"Hasta la vista, bug!"*
+*   **`/agent-wsmmga-commit` ou `/agent-wsmmga-doc` (Especialista de Versionamento - Dr. Emmett Brown):** O guardião da linha do tempo! Após tudo aprovado, ele entra em cena para empacotar o código. Cria branches dentro dos padrões (feature/, bugfix/), elabora commits semânticos ("*Great Scott!*") e documenta de forma impecável o que foi entregue.
 
 *(Estes nomes são sugestões e a dinâmica pode ser adaptada conforme a cultura do seu time!)*
 
@@ -46,10 +48,10 @@ A ferramenta foi projetada para atuar como uma biblioteca (CLI) global no seu co
 
 ### 1. Instalação Global (via GitHub)
 
-\`\`\`bash
-# Substitua 'seu-usuario' pelo seu usuário do GitHub
+```bash
 npm install -g git+https://github.com/ericwsmmga/agentwsmmga.git
-\`\`\`
+```
+
 > **Dica:** O NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentwsmmga` em qualquer projeto seu de forma instantânea.
 
 ### 2. Configurando um Projeto (Setup Inicial)
