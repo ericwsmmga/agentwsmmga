@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.1...v1.1.2) (2026-09-10)
+
+
+### Bug Fixes
+
+* ship dist files and remove prepare step for flawless git installs ([230a0d6](https://github.com/ericwsmmga/agentwsmmga/commit/230a0d61cd2b6df34695bd3a139d68d496c3a9aa))
+
 ## [1.1.1](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.0...v1.1.1) (2026-09-10)
 
 
