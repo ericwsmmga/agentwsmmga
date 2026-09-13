@@ -121,6 +121,7 @@ async function main() {
   console.log('\\nPronto, ' + name + '! Seus agentes foram gerados com sucesso na pasta: ' + targetDir);
   console.log('Lembre-se do fluxo de trabalho ideal:');
   console.log('PO -> Dev e/ou DB (com debate) -> Reviewer -> QA');
+  console.log('\\n⚠️  IMPORTANTE: Por favor, reinicie sua IDE (VS Code, Cursor, etc.) para que os novos agentes/regras sejam carregados corretamente.\\n');
   
   rl.close();
 }
