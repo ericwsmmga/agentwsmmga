@@ -48,5 +48,8 @@
       ],
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "enquirer": "^2.4.1"
   }
 }

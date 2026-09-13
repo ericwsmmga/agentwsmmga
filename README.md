@@ -46,13 +46,39 @@ A estrutura gerada nos projetos (`.agents/skills/` ou diretórios configuráveis
 
 A ferramenta foi projetada para atuar como uma biblioteca (CLI) global no seu computador, mantendo sua máquina organizada.
 
-### 1. Instalação Global (via GitHub)
+### 1. Instalação e Execução
 
+Você pode executar o gerador de duas formas.
+
+**Opção A: Executar via npx (Recomendado)**
+Não precisa instalar nada globalmente, basta rodar o comando abaixo no diretório do seu projeto:
+```bash
+npx github:ericwsmmga/agentwsmmga
+```
+
+**Opção B: Instalação Global (NPM)**
+Se preferir ter o comando sempre disponível no seu terminal:
+```bash
+# Instalar globalmente
+npm install -g git+https://github.com/ericwsmmga/agentwsmmga.git
+
+# Executar
+agentwsmmga
+```
+
+### ♻️ Atualizando a CLI
+Se você usou a instalação global e quer atualizar para a última versão disponível no GitHub:
 ```bash
 npm install -g git+https://github.com/ericwsmmga/agentwsmmga.git
 ```
+Ou apenas use `agentwsmmga -v` para que o próprio CLI verifique se há atualizações!
 
-> **Dica:** O NPM baixa, compila e salva o executável globalmente. Você poderá rodar `agentwsmmga` em qualquer projeto seu de forma instantânea.
+### 🗑️ Removendo a CLI (Instalação Global)
+Caso não queira mais utilizar a ferramenta instalada globalmente, basta rodar:
+```bash
+npm uninstall -g agentwsmmga
+```
+
 
 ### 2. Configurando um Projeto (Setup Inicial)
 
