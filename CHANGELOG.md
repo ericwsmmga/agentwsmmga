@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.3...v1.2.0) (2026-09-13)
+
+
+### Features
+
+* add IDE restart instruction after agents generation ([091aaeb](https://github.com/ericwsmmga/agentwsmmga/commit/091aaeb346e3cbf667406988ebdd52c94415cc8d))
+
 ## [1.1.3](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.2...v1.1.3) (2026-09-13)
 
 
