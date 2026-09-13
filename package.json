@@ -7,7 +7,8 @@
     "agentwsmmga": "./dist/index.js"
   },
   "scripts": {
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "prepare": "npm run build"
   },
   "keywords": [
     "ai",
