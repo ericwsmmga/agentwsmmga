@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.2...v1.1.3) (2026-09-13)
+
+
+### Bug Fixes
+
+* add prepare script for git installation ([00f08b3](https://github.com/ericwsmmga/agentwsmmga/commit/00f08b344e767be94c0df9b1c85b5d9180927a24))
+
 ## [1.1.2](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.1...v1.1.2) (2026-09-13)
 
 
