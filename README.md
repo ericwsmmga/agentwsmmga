@@ -75,18 +75,8 @@ Uma pasta `.agents` será gerada na sua raiz com todos os agentes orquestrados.
 
 O segredo do sucesso do ecossistema é o fluxo de trabalho imutável. Para o time gerar o melhor resultado possível, orquestre a chamada desses agentes na ordem certa:
 
-\`\`\`mermaid
-flowchart TD
-    A[Xavier - PO] -->|Define História e Requisitos| B(Neo - Dev)
-    B <-->|Debate Modelagem e Escalabilidade| C(Oráculo - DB)
-    B -->|Envia Código e Testes| D{Gandalf - Review}
-    C -->|Aprova Esquema| D
-    D -->|Se reprovado| B
-    D -->|Se aprovado| E[T-800 - QA]
-    E -->|Se encontrar falha| B
-    E -->|Testes Passaram| F[Doc Brown - Commit]
-    F -->|Entrega Versionada na Timeline| G((FIM))
-\`\`\`
+![Fluxo de Desenvolvimento](assets/fluxo-desenvolvimento.png)
+
 
 #### O Passo a Passo no Dia a Dia:
 
