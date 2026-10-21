@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ericwsmmga/agentwsmmga/compare/v1.2.0...v1.2.1) (2026-10-21)
+
+
+### Bug Fixes
+
+* avoid building during git installation ([8d68990](https://github.com/ericwsmmga/agentwsmmga/commit/8d68990e54dff34e439a8bf510c8c9dafd9cda09))
+
 # [1.2.0](https://github.com/ericwsmmga/agentwsmmga/compare/v1.1.3...v1.2.0) (2026-09-13)
 
 
